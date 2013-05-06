@@ -14,8 +14,18 @@ setup(
     author='Guilherme Souza',
     author_email='guivideojob@gmail.com',
     url='http://github.com/guilhermef/robotnik',
-    license='Proprietary',
-    classifiers=[],
+    license='MIT',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Natural Language :: English',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+    ],
+
     packages=['robotnik'],
     include_package_data=True,
     zip_safe=False,
@@ -24,5 +34,11 @@ setup(
         'derpconf==0.4.7',
         'pycurl==7.19.0'
     ],
+
+    entry_points={
+        'console_scripts': [
+            'robotnik=robotnik.server:main'
+        ],
+    },
 
 )
