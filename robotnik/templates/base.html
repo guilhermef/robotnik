@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robotnik{% block title %}{% end %}</title>
+  <link rel="stylesheet" href="{{ handler.static_url('css/reset.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ handler.static_url('css/base.css') }}" type="text/css">
+</head>
+<body>
+  <h1>Robotnik</h1>
+  {% block content %}
+  {% end %}
+</body>
+</html>

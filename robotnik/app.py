@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+from os.path import dirname, abspath, join
 import tornado.web
 from tornado.httpclient import AsyncHTTPClient
 from tornado.web import url
@@ -17,6 +18,8 @@ def configure_app(self, config=None, log_level='INFO', debug=False, main_loop=No
     ]
 
     options = {}
+    options['template_path'] = abspath(join(dirname(__file__), 'templates'))
+    options['static_path'] = abspath(join(dirname(__file__), 'static'))
 
     self.project_keys = {}
 

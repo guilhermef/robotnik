@@ -1,0 +1,54 @@
+input[type=url] {
+  width: 300px;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+ul {
+  width: 300px;
+}
+
+li {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+li.updated {
+  color: #46a546;
+}
+
+li.updated .marker {
+  background-color: #46a546;
+}
+
+li.minor_outdated {
+  color: #ffc40d;
+}
+
+li.minor_outdated .marker {
+  background-color: #ffc40d;
+}
+
+li.major_outdated {
+  color: #c43c35;
+}
+
+li.major_outdated .marker {
+  background-color: #c43c35;
+}
+
+span.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  float: right;
+}
+
+span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}

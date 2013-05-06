@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>{{ package_name }}</h2>
+  <ul>
+    {% for k, v in dependencies.iteritems() %}
+      <li class="{{v['type']}}">
+        <span class='egg'>{{ k }}</span>
+        <span class='current'>{{ v['current_version'] }}</span>
+        <span class='latest'>{{ v['latest_version'] }}</span>
+        <span class='marker'></span>
+      </li>
+    {% end %}
+  </ul>
+{% end %}
