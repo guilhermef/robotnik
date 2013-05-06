@@ -3,3 +3,4 @@ recursive-include robotnik *.py
 recursive-include robotnik *.css
 recursive-include robotnik *.html
 recursive-include robotnik *.htm
+recursive-include robotnik *.conf

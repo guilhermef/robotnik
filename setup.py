@@ -7,7 +7,7 @@ from setuptools import setup
 
 setup(
     name='robotnik',
-    version='0.1',
+    version='0.2',
     description="Robotnik, python gemnasium",
     long_description="Robotnik, python gemnasium",
     keywords='gemnasium robotnik',
